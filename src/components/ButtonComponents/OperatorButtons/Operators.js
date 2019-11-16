@@ -9,7 +9,7 @@ const Operators = () => {
   // STEP 2 - add the imported data to state
   const [opState, setOpState] = useState(operators);
   return (
-    <div>
+    <div className="opGrid">
       {opState.map(item => (
         <OperatorButton label={item.char} />
       ))
