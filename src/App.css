@@ -1,22 +1,84 @@
+* {
+  box-sizing: border-box;
+}
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+  background-color: #c00025;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding-bottom: 25px;
+  margin: 0 auto;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
-    color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+  margin: 0 auto;
+  margin-top: 25px;
+  height: 100px;
+  width: 475px;
+  border-radius: 50px;
+  color: white;
+  background-color: #322c2d;
+  box-shadow: 1px 1px #322c2d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 50px;
+  font-size: 5rem;
+}
+.logo {
+  padding-top: 25px;
+  padding-left: 35.5px;
+}
+.circleBtn {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  font-size: 33px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 4px 0 black;
+}
+.numBtn {
+  background: #244375;
+}
+
+.specBtn {
+  background: #3261ab;
+}
+
+.opBtn {
+  background: #61b4e0;
+}
+
+.btnContainer {
+  padding: 20px 0;
+  width: 475px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  /* grid-template-areas:
+    "c + p d"
+    "1 2 3 x"
+    "4 5 6 s"
+    "7 8 9 a"
+    "0 0 . ="; */
+}
+.btnContainer button {
+  margin: 8px 12.5px;
+}
+.buttonGrid {
+  display: block;
+  margin-left: -12.5px;
+}
+.opGrid {
+  display: block;
+  width: 100px;
+  margin-right: 12.5px;
+}
+
+.numBtn.circleBtn:nth-child(13) {
+  width: 225px;
+  border-radius: 47px;
+}
